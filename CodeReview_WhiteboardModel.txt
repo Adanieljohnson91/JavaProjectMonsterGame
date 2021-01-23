@@ -1,0 +1,99 @@
+-----------------------------------
+FIRST CODE REVIEW - WhiteboardModel
+-----------------------------------
+
+This is due by 7am PT on Sat 1/23/21.  I will download them at that time - no late submissions accepted.
+
+This is individual work, based on the "whiteboard" class you modeled as a group last week, and have been coding ever since.
+
+You are to submit a zip file named as follows:
+
+WhiteboardModel_YourName.zip
+
+where "YourName" is the common name you use in class, e.g., "Nick", "Kathy", "Bek", etc.  Last name not necessary.
+As long as it's clear whose work it is.
+
+Your zip file should include the following source files (.java):
+
+1. The business class - AirFryer, Laptop, Cellphone, Guitar, etc.
+
+2. Any supporting classes - enum types, etc.
+
+3. A client main-class that does a basic test-drive of the business class, e.g., 
+   - create an instance with new
+   - set some properties via ctor or setter calls
+   - call some business methods
+   - print a string representation of the instance via its toString() method (like we do in class all the time)
+
+   Ideally, you should do this with a few instances (two would be fine).
+   
+   Name this class AirFryerClient, LaptopClient, CellphoneClient, GuitarClient, etc.
+
+4. A validation test main-class that exercises any of the validation constraints you have implemented in your setters,
+   similar to what we did in TelevisionValidationTest, with Television's setVolume() and setBrand() methods.
+   
+   Name this class AirFryerValidationTest, LaptopValidationTest, CellphoneValidationTest, GuitarValidationTest, etc.
+
+5. Another client main-class that allows a user to provide input data to create an instance of your business class.
+   Like we did in Lab 6.1, and it should have the same basic features we implemented in that lab.
+   
+   Name this class AirFryerClientArgs, LaptopClientArgs, CellphoneClientArgs, GuitarClientArgs, etc.
+
+
+Additional notes:
+
+0. Renaming a class, variable, or method is easy in IntelliJ.  Simply select the item in question (with the mouse)
+and then right-click -> Refactor -> Rename.  This renames it throughout your WhiteboardModel module in IntelliJ.
+
+1. The business class should support these basic OO features that we've discussed:
+   - attributes and business methods
+   - data encapsulation
+   - constructors
+   - toString()
+   - use of proper enum types (if applicable)
+   - data validation (if applicable), including static constants where applicable
+
+2. Standard Java naming conventions are required *everywhere* - ClassNames, variableNames, methodNames(), etc.
+
+3. Attention should be given to indenting, spelling, commenting, etc.  This is more important than you might think!
+   Quality code not only works correctly, it reads like poetry.
+
+4. The business class and its supporting classes (e.g., enums) should be in a package, you pick the name.
+   Just make it up, have fun with it.  In the example below, the base package is com.music, and the 
+   fully-qualified classnames are:
+   com.music.Guitar      (business class)
+   com.music.GuitarType  (an enum type)
+
+5. The two client classes should be in a separate package, named basepackage.client.
+   In the example below, the client package is named com.music.client, and the fully-qualified classnames are:
+   com.music.client.GuitarClient
+   com.music.client.GuitarClientArgs
+
+6. The validation test class should be in yet another package, named basepackage.test.
+   In the example below, the test package is named com.music.test, and the fully-qualified classnames are:
+   com.music.test.GuitarValidationTest
+   
+   Final result of (4) thru (6) above, showing the fully-qualified classnames:
+   com.music.Guitar
+   com.music.GuitarType
+   com.music.client.GuitarClient
+   com.music.client.GuitarClientArgs
+   com.music.test.GuitarValidationTest
+
+7. The zip file should comprise all the files in your WhiteboardModel IntelliJ lab module.
+   This is very easy to do.  On the filesystem, just zip up the folder of the IntelliJ module containing your code.
+   Right-click on WhiteboardModel -> 7-zip -> Add to archive...  choose "zip" format in the dialog.
+
+   IMPORTANT: if using 7-Zip on Windows, choose "zip" format, *not* the proprietary "7z" format.
+   If doing this on a Mac, proceed similarly, i.e., submit a genuine "zip" file, not some proprietary format.
+
+   The zip file should be named as specified above, at the top of this document.
+
+8. The zip file should be uploaded to MS Teams in the following location:
+   Java Channel -> <Your Private Channel>
+
+
+A final reminder:
+
+If you did this work like I advised all along, all you really should have to do is look it over and neaten it up.
+Then zip it and push it up.  Weekend!
